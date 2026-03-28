@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>tailwind-basic</title>
         <link href="/src/style.css" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
-    <body class="bg-[url(/public/img/background.jpg)]">
+    <body class="m-auto bg-[url(/public/img/background.jpg)] font-sans">
 
         <!-- Header -->
 
@@ -22,8 +24,8 @@
         <!-- Section titre -->
 
         <section>
-            <div class="label">
-                <span class="text-wrapper">SPACE CATS</span>
+            <div>
+                <h1 class="font-decoration text-[9.6rem]">SPACE CATS</h1>
             </div>
         </section>
 
@@ -37,7 +39,7 @@
         <!-- Section Cats-->
          
         <section>
-            <h1>Discover our cats</h1>
+            <h2 class="font-decoration text-[4.5rem] w-full">Discover our cats</h2>
             <div class="grid grid-cols-3 grid-rows-3">
                 <div class="col-start-1 col-end-2 row-start-1 row-end-3">
                     <img src="/public/img/azazal.jpg">

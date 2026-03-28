@@ -1,45 +1,9 @@
 @import "tailwindcss";
 
-.label {
-  width: 326px;
-  height: 210px;
+@theme {
+  --color-spacegray: oklch(1 0 0 / 25.1%)
 }
 
-.label .text-wrapper {
-  position: fixed;
-  top: 111px;
-  left: 34px;
-  width: 326px;
-  height: 210px;
-  display: flex;
-  align-items: center;
-  text-shadow: 14px 10px 4px #000000;
-  font-family: "Inter-Black", Helvetica;
-  font-weight: 900;
-  color: #ffffff40;
-  font-size: 96px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-/* Original CSS injected here */
-.label {
-  width: 326px;
-  height: 210px;
-}
-
-.label .text-wrapper {
-  position: fixed;
-  top: 111px;
-  left: 34px;
-  width: 326px;
-  height: 210px;
-  display: flex;
-  align-items: center;
-  text-shadow: 14px 10px 4px #000000;
-  font-family: "Inter-Black", Helvetica;
-  font-weight: 900;
-  color: #ffffff40;
-  font-size: 96px;
-  letter-spacing: 0;
-  line-height: normal;
+.font-decoration {
+  @apply m-0 text-spacegray font-black font-[Inter] tracking-normal leading-[normal] text-shadow-[14px_10px_4px] text-shadow-black
 }
