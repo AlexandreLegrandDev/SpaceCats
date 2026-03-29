@@ -5,7 +5,8 @@
 }
 
 @theme {
-  --color-spacegray: oklch(1 0 0 / 25.1%)
+  --color-spacegray: oklch(1 0 0 / 25.1%);
+  --animate-planet-translate: planet-translate 10s linear infinite;
 }
 
 .font-decoration {
@@ -14,4 +15,13 @@
 
 .section-space {
   @apply mt-[40px] mb-[40px]
+}
+
+@keyframes planet-translate {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
