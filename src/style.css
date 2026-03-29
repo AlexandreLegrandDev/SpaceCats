@@ -10,6 +10,7 @@
 @theme {
   --color-spacegray: oklch(1 0 0 / 25.1%);
   --animate-planet-translate: planet-translate 10s linear infinite;
+  --animate-cat1-translate: cat1-translate 26s linear infinite;
 }
 
 .font-decoration {
@@ -20,11 +21,25 @@
   @apply mt-[40px] mb-[40px]
 }
 
+/* Animations des planètes */
+
 @keyframes planet-translate {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* Animations des chats en background */ 
+
+
+@keyframes cat1-translate {
+  0% {
+    transform: translateX(-400%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(800%) rotate(360deg);
   }
 }
