@@ -4,6 +4,9 @@
   font-size: 10px;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 @theme {
   --color-spacegray: oklch(1 0 0 / 25.1%);
   --animate-planet-translate: planet-translate 10s linear infinite;

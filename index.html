@@ -7,25 +7,28 @@
         <link href="/src/style.css" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
-    <body class="max-w-5xl mx-auto px-8 sm:px-6 lg:px-8 bg-[url(/public/img/background.jpg)] font-sans">
+    <body class="max-w-5xl mx-auto px-8 sm:px-6 lg:px-8 bg-[url(/public/img/background.jpg)] dark:bg-[url(/public/img/azazal.jpg)] font-sans">
 
         <!-- Header -->
 
-        <header>
-            <div>
-                <img class="w-5" src="public/img/azazal.jpg" alt="logo_placeholder">
+        <header class="mt-2 flex justify-between">
+            <div class="w-[20%]">
+                <img class="w-full" src="public/img/azazal.jpg" alt="logo_placeholder">
             </div>
 
-            <div>
-                
+            <div class="w-[20%]">
+                <img class="w-full" id="dark_mode" src="public/img/azazal.jpg" alt="logo_placeholder">
             </div>
         </header>
 
         <!-- Section titre -->
 
-        <section class="section-space">
-            <div>
-                <h1 class="font-decoration text-[11rem]">SPACE CATS</h1>
+        <section class="section-space flex justify-center relative">
+            <div class="relative w-fit">
+                <img class="absolute z-2 w-[20%] -top-[10%] rotate-15 left-[45%]" src="/public/img/star.png">
+                <img class="absolute z-2 w-[20%] top-[33%] -rotate-25 left-[6%]" src="/public/img/star.png">
+                <img class="absolute z-2 w-[20%] -bottom-[2%] rotate-40 right-[11%]" src="/public/img/star.png">
+                <h1 class="font-decoration text-[clamp(11rem,25vw,18rem)] relative z-1 w-fit h-auto">SPACE CATS</h1>
             </div>
         </section>
 
@@ -39,7 +42,7 @@
         <!-- Section Cats-->
          
         <section class="section-space">
-            <h2 class="font-decoration text-[3.4rem] w-full text-center mb-11">Discover our cats</h2>
+            <h2 class="font-decoration text-[clamp(3rem,3vw,3.4rem)] w-full text-center mb-11">Discover our cats</h2>
             <div class="grid grid-cols-3 grid-rows-3 gap-7">
                 <div class="col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col items-center">
                     <img src="/public/img/azazal.jpg">
@@ -88,6 +91,27 @@
                 Les crédits
             </span>
         </footer>
+
+
+        <!-- JS (dark mode) -->
+
+        <script>
+
+            const dark_mode = document.getElementById("dark_mode");
+            console.log(dark_mode);
+
+            dark_mode.addEventListener("click", () => {
+                const html = document.querySelector("html");
+                console.log(html.className)
+                if(html.className != "") {
+                    html.classList.remove("dark");
+                }else {
+                    html.classList.add("dark");
+                }
+            })
+
+        </script>
+
 
     </body>
 </html>
