@@ -11,6 +11,7 @@
   --color-spacegray: oklch(1 0 0 / 25.1%);
   --animate-planet-translate: planet-translate 10s linear infinite;
   --animate-cat1-translate: cat1-translate 26s linear infinite;
+  --animate-cat2-translate: cat1-translate 14s linear infinite;
 }
 
 .font-decoration {
@@ -41,5 +42,14 @@
   }
   100% {
     transform: translateX(800%) rotate(360deg);
+  }
+}
+
+@keyframes cat2-translate {
+  0% {
+    transform: translateX(-400%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(800%) rotate(450deg);
   }
 }
