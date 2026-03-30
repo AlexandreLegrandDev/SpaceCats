@@ -18,10 +18,6 @@
   @apply inset-0 text-spacegray font-black uppercase font-[Inter] tracking-normal leading-[normal] text-shadow-[14px_10px_4px] text-shadow-black
 }
 
-.section-space {
-  @apply mt-[40px] mb-[40px]
-}
-
 /* Animations des planètes */
 
 @keyframes planet-translate {
