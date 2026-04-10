@@ -7,6 +7,8 @@
         <link rel="icon" type="image/png" href="/public/img/logo.png" />
         <link href="/src/style.css" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     </head>
     <body class="mx-auto bg-no-repeat bg-cover bg-[url(/public/img/background-light.jpg)] dark:bg-[url(/public/img/background.jpg)] font-sans">
 
@@ -34,6 +36,7 @@
                     <img class="absolute z-2 w-[20%] -bottom-[2%] rotate-40 right-[11%]" src="/public/img/star.png">
                     <h1 class="font-decoration text-[clamp(11rem,25vw,18rem)] relative z-1 w-fit h-auto">SPACE CATS</h1>
                 </div>
+                <a href="#" class="button-decoration flex items-center">Discover our felin space &nbsp <i class='bx bx-right-arrow-circle'></i></a>
             </section>
 
 
@@ -47,7 +50,7 @@
 
             <!-- Section Cats-->
             
-            <section class="mb-60 px-8 sm:px-6 lg:px-8">
+            <section class="mb-80 px-8 sm:px-6 lg:px-8">
                 <h2 class="font-decoration text-[clamp(3rem,3vw,3.4rem)] w-full text-center mb-11">Discover our cats</h2>
                 <div class="grid grid-cols-3 grid-rows-3 gap-7 mt-30">
                     <div class="col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col items-center">
@@ -69,7 +72,7 @@
 
             <!-- Section Planètes -->
 
-            <section class="mb-60 overflow-hidden relative z-10">
+            <section class="mb-80 overflow-hidden relative z-10">
                 <div class="animate-planet-translate flex w-max gap-9">
                     <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
                     <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
@@ -87,8 +90,8 @@
 
             <footer class="flex justify-around items-center relative px-8 sm:px-6 lg:px-8">
                 <div class="relative w-full overflow-hidden">
-                    <img class="absolute left-1/2 -translate-x-1/2 bottom-[-15%] w-[75%] z-10 hidden dark:block" src="/public/img/moon.png">
-                    <img class="relative w-full mb-[-50%]" src="/public/img/catsun.png">
+                    <img class="absolute left-1/2 -translate-x-1/2 bottom-[-15%] w-[75%] z-10 hidden dark:block planet-rotate" src="/public/img/moon.png">
+                    <img class="relative w-full mb-[-50%] animate-planet-rotate" src="/public/img/catsun.png">
                 </div>
             </footer>
 
@@ -96,8 +99,10 @@
             <!-- Chats en background -->
 
             <div>
-                <img class="absolute top-[20%] animate-cat1-translate z-0 w-[25%]" src="/public/img/space_KARMA.png">
-                <img class="absolute top-[75%] animate-cat2-translate z-0 w-[25%]" src="/public/img/angelo.png">
+                <img class="absolute top-[20%] animate-cat1-translate z-0 w-[24%]" src="/public/img/space_KARMA.png">
+                <img class="absolute top-[50%] animate-cat2-translate z-0 w-[25%]" src="/public/img/angelo.png">
+                <img class="absolute top-[74%] animate-cat2-translate z-0 w-[24%]" src="/public/img/space_KARMA.png">
+                <img class="absolute top-[88%] animate-cat2-translate z-0 w-[25%]" src="/public/img/angelo.png">
             </div>
 
         </div>
