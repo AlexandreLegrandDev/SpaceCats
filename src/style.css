@@ -15,6 +15,7 @@
   --animate-cat2-translate: cat2-translate 16s linear infinite;
   --animate-planet-rotate: planet-rotate 200s linear infinite;
   --animate-float: float 16s linear infinite;
+  --animate-star-animation: star-animation 3s ease-in-out infinite;
 }
 
 .font-decoration {
@@ -75,5 +76,17 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes star-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
