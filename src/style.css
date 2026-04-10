@@ -11,14 +11,11 @@
   --color-spacegray: oklch(1 0 0 / 25.1%);
   --animate-planet-translate: planet-translate 10s linear infinite;
   --animate-cat1-translate: cat1-translate 26s linear infinite;
+  --animate-cat2-translate: cat2-translate 16s linear infinite;
 }
 
 .font-decoration {
   @apply inset-0 text-spacegray font-black uppercase font-[Inter] tracking-normal leading-[normal] text-shadow-[14px_10px_4px] text-shadow-black
-}
-
-.section-space {
-  @apply mt-[40px] mb-[40px]
 }
 
 /* Animations des planètes */
@@ -41,5 +38,14 @@
   }
   100% {
     transform: translateX(800%) rotate(360deg);
+  }
+}
+
+@keyframes cat2-translate {
+  0% {
+    transform: translateX(-400%) translateY(-10%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(800%) translateY(-40%) rotate(360deg);
   }
 }

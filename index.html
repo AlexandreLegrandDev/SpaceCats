@@ -7,7 +7,7 @@
         <link href="/src/style.css" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
-    <body class="mx-auto px-8 sm:px-6 lg:px-8 bg-[url(/public/img/background.jpg)] dark:bg-[url(/public/img/azazal.jpg)] font-sans">
+    <body class="mx-auto px-8 sm:px-6 lg:px-8 bg-no-repeat bg-cover bg-[url(/public/img/background-light.jpg)] dark:bg-[url(/public/img/background.jpg)] font-sans">
 
         <div class="relative z-1 overflow-hidden">
 
@@ -25,7 +25,7 @@
 
             <!-- Section titre -->
 
-            <section class="section-space relative max-w-5xl m-auto">
+            <section class="relative max-w-5xl mr-auto ml-auto mt-20 mb-50">
                 <div class="relative w-fit">
                     <img class="absolute z-2 w-[20%] -top-[10%] rotate-15 left-[45%]" src="/public/img/star.png">
                     <img class="absolute z-2 w-[20%] top-[33%] -rotate-25 left-[6%]" src="/public/img/star.png">
@@ -43,15 +43,15 @@
 
             <!-- Section Cats-->
             
-            <section class="section-space">
+            <section class="mb-50">
                 <h2 class="font-decoration text-[clamp(3rem,3vw,3.4rem)] w-full text-center mb-11">Discover our cats</h2>
                 <div class="grid grid-cols-3 grid-rows-3 gap-7">
                     <div class="col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col items-center">
-                        <img src="/public/img/azazal.jpg">
-                        <span class="pt-4 font-decoration text-[1.2rem] text-center">Im a cute cat</span>
+                        <img src="/public/img/chat1.jpg">
+                        <span class="pt-4 font-decoration text-[1.2rem] text-center">Karma</span>
                     </div>
                     <div class="col-start-2 col-end-3 row-start-2 row-end-4 flex flex-col items-center">
-                        <img src="/public/img/azazal.jpg">
+                        <img class="aspect-square object-cover" src="/public/img/chat2.png">
                         <span class="pt-4 font-decoration text-[1.2rem] text-center">Im a cute cat</span>
                     </div>
                     <div class="col-start-3 col-end-4 row-start-1 row-end-3 flex flex-col items-center">
@@ -65,17 +65,17 @@
 
             <!-- Section Planètes -->
 
-            <section class="section-space overflow-hidden">
-                <div class="animate-planet-translate flex w-max">
-                    <img class="w-[22vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/hello_cat.png">
-                    <img class="w-[22vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
-                    <img class="w-[22vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
-                    <img class="w-[22vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
+            <section class="mb-30 overflow-hidden relative z-10">
+                <div class="animate-planet-translate flex w-max gap-9">
+                    <img class="w-[17vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
+                    <img class="w-[17vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
+                    <img class="w-[17vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
+                    <img class="w-[17vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
 
-                    <img class="w-[22vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/hello_cat.png">
-                    <img class="w-[22vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
-                    <img class="w-[22vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
-                    <img class="w-[22vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
+                    <img class="w-[17vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
+                    <img class="w-[17vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
+                    <img class="w-[17vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
+                    <img class="w-[17vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
                 </div>
             </section>
 
@@ -87,8 +87,7 @@
                 </span>
                 <div class="relative w-[40%] overflow-hidden">
                     <img class="absolute left-1/2 -translate-x-1/2 bottom-[-15%] w-[75%] z-10 hidden dark:block" src="/public/img/moon.png">
-                    <img class="absolute left-1/2 -translate-x-1/2 bottom-[-15%] w-[75%] z-10 dark:hidden" src="/public/img/sun.png">
-                    <img class="relative w-full" src="/public/img/hello_cat.png">
+                    <img class="relative w-full" src="/public/img/catsun.png">
                 </div>
                 <span class="font-decoration">
                     Les crédits
@@ -100,6 +99,7 @@
 
             <div>
                 <img class="absolute top-[25%] animate-cat1-translate z-0 w-[25%]" src="/public/img/space_KARMA.png">
+                <img class="absolute top-[75%] animate-cat2-translate z-0 w-[25%]" src="/public/img/angelo.png">
             </div>
 
         </div>
