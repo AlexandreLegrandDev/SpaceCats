@@ -14,6 +14,7 @@
   --animate-cat1-translate: cat1-translate 26s linear infinite;
   --animate-cat2-translate: cat2-translate 16s linear infinite;
   --animate-planet-rotate: planet-rotate 200s linear infinite;
+  --animate-float: float 16s linear infinite;
 }
 
 .font-decoration {
@@ -62,5 +63,17 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes float{
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
