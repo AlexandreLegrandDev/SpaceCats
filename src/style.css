@@ -10,6 +10,7 @@
 @theme {
   --color-spacegray: oklch(1 0 0 / 25.1%);
   --color-fontshadow: oklch(0 0 0 / 50.29%);
+  --color-lightfooter: oklch(0.6571 0.1006 227.16 / 10%);
   --animate-planet-translate: planet-translate 10s linear infinite;
   --animate-cat1-translate: cat1-translate 26s linear infinite;
   --animate-cat2-translate: cat2-translate 16s linear infinite;
