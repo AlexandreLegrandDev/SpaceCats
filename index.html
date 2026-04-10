@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>tailwind-basic</title>
+        <title>Space Cats</title>
+        <link rel="icon" type="image/png" href="/public/img/logo.png" />
         <link href="/src/style.css" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
@@ -13,7 +14,7 @@
 
             <!-- Header -->
 
-            <header class="px-8 sm:px-6 lg:px-8 mt-2 flex justify-between items-center mb-60">
+            <header class="px-8 sm:px-6 lg:px-8 mt-6 flex justify-between items-center mb-60">
                 <div class="w-[20%]">
                     <img class="w-full" src="public/img/logo.png" alt="logo chat">
                 </div>
@@ -38,9 +39,9 @@
 
             <!-- Section UFO -->
 
-            <section class="section-space mr-auto ml-auto mb-60">
+            <section class="section-space mr-auto ml-auto mb-60 flex justify-center">
 
-                <img class="aspect-[4/5] object-cover" src="/public/img/anim.gif">
+                <img class="aspect-4/5 object-cover" src="/public/img/anim.gif">
 
             </section>
 
@@ -48,17 +49,17 @@
             
             <section class="mb-60 px-8 sm:px-6 lg:px-8">
                 <h2 class="font-decoration text-[clamp(3rem,3vw,3.4rem)] w-full text-center mb-11">Discover our cats</h2>
-                <div class="grid grid-cols-3 grid-rows-3 gap-7">
+                <div class="grid grid-cols-3 grid-rows-3 gap-7 mt-30">
                     <div class="col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col items-center">
-                        <img class="aspect-[2/3] object-cover" src="/public/img/chat1.jpg">
+                        <img class="aspect-2/3 object-cover" src="/public/img/chat1.jpg">
                         <span class="pt-4 font-decoration text-[1.2rem] text-center">Karma</span>
                     </div>
                     <div class="col-start-2 col-end-3 row-start-2 row-end-4 flex flex-col items-center">
-                        <img class="aspect-[2/3] object-cover" src="/public/img/chat2.png">
+                        <img class="aspect-2/3 object-cover" src="/public/img/chat2.png">
                         <span class="pt-4 font-decoration text-[1.2rem] text-center">Félicette</span>
                     </div>
                     <div class="col-start-3 col-end-4 row-start-1 row-end-3 flex flex-col items-center">
-                        <img class="aspect-[2/3] object-cover" src="/public/img/chat3.png">
+                        <img class="aspect-2/3 object-cover" src="/public/img/uwu.jpg">
                         <span class="pt-4 font-decoration text-[1.2rem] text-center">Angelo</span>
                     </div>
                 </div>
@@ -85,23 +86,17 @@
             <!-- Footer -->
 
             <footer class="flex justify-around items-center relative px-8 sm:px-6 lg:px-8">
-                <span class="font-decoration">
-                    Les crédits
-                </span>
-                <div class="relative w-[40%] overflow-hidden">
+                <div class="relative w-full overflow-hidden">
                     <img class="absolute left-1/2 -translate-x-1/2 bottom-[-15%] w-[75%] z-10 hidden dark:block" src="/public/img/moon.png">
-                    <img class="relative w-full" src="/public/img/catsun.png">
+                    <img class="relative w-full mb-[-50%]" src="/public/img/catsun.png">
                 </div>
-                <span class="font-decoration">
-                    Les crédits
-                </span>
             </footer>
 
 
             <!-- Chats en background -->
 
             <div>
-                <img class="absolute top-[25%] animate-cat1-translate z-0 w-[25%]" src="/public/img/space_KARMA.png">
+                <img class="absolute top-[20%] animate-cat1-translate z-0 w-[25%]" src="/public/img/space_KARMA.png">
                 <img class="absolute top-[75%] animate-cat2-translate z-0 w-[25%]" src="/public/img/angelo.png">
             </div>
 
