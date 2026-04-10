@@ -9,13 +9,14 @@
 
 @theme {
   --color-spacegray: oklch(1 0 0 / 25.1%);
+  --color-fontshadow: oklch(0 0 0 / 50.29%);
   --animate-planet-translate: planet-translate 10s linear infinite;
   --animate-cat1-translate: cat1-translate 26s linear infinite;
   --animate-cat2-translate: cat2-translate 16s linear infinite;
 }
 
 .font-decoration {
-  @apply inset-0 text-spacegray font-black uppercase font-[Inter] tracking-normal leading-[normal] text-shadow-[14px_10px_4px] text-shadow-black
+  @apply inset-0 text-transparent font-black uppercase font-[Inter] tracking-normal leading-[normal] text-shadow-[0px_3px_3px] text-shadow-fontshadow bg-clip-text bg-[#FFFFFF]
 }
 
 /* Animations des planètes */

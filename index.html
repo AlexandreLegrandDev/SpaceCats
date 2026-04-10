@@ -14,12 +14,13 @@
             <!-- Header -->
 
             <header class="mt-2 flex justify-between">
-                <div class="w-[20%]">
+                <div class="w-[30%]">
                     <img class="w-full" src="public/img/azazal.jpg" alt="logo_placeholder">
                 </div>
 
-                <div class="w-[20%]">
-                    <img class="w-full" id="dark_mode" src="public/img/azazal.jpg" alt="logo_placeholder">
+                <div class="w-[10%]" id="dark_mode">
+                    <img class="w-full hidden dark:block" src="public/img/lightmode.png" alt="logo_placeholder">
+                    <img class="w-full dark:hidden" src="public/img/nightmode.png" alt="logo_placeholder">
                 </div>
             </header>
 
@@ -109,7 +110,6 @@
         <script>
 
             const dark_mode = document.getElementById("dark_mode");
-            console.log(dark_mode);
 
             dark_mode.addEventListener("click", () => {
                 const html = document.querySelector("html");
