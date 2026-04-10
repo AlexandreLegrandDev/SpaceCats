@@ -14,19 +14,22 @@
   --animate-planet-translate: planet-translate 10s linear infinite;
   --animate-cat1-translate: cat1-translate 26s linear infinite;
   --animate-cat2-translate: cat2-translate 16s linear infinite;
-  --animate-planet-rotate: planet-rotate 200s linear infinite;
+  --animate-planet-rotate: planet-rotate 100s linear infinite;
+  --animate-footer-planet-rotate: footer-planet-rotate 200s linear infinite;
   --animate-float: float 16s linear infinite;
-  --animate-star-animation: star-animation 3s ease-in-out infinite;
+  --animate-star-animation: star-animation 6s ease-in-out infinite;
+  --animate-button-animation: button-animation 3s ease-in-out infinite;
   --animate-cat3-translate: cat3-translate 26s linear infinite;
   --animate-cat4-translate: cat4-translate 16s linear infinite;
 }
 
 .font-decoration {
-  @apply inset-0 text-transparent font-black font-[Inter] tracking-normal leading-[normal] text-shadow-[0px_3px_3px] text-shadow-fontshadow bg-clip-text bg-[#FFFFFF]
+  @apply inset-0 text-transparent font-black font-[Inter] tracking-normal leading-[normal] text-shadow-[0px_3px_3px] text-shadow-fontshadow bg-clip-text
 }
 
+
 .button-decoration {
-  @apply p-2 text-[clamp(1.5rem,2vw,4rem)] text-transparent font-bold font-[Inter] text-shadow-[0px_3px_3px] text-shadow-fontshadow bg-clip-text bg-[#FFFFFF] uppercase
+  @apply p-2 text-[clamp(1.5rem,2vw,4rem)] text-transparent font-bold font-[Inter] text-shadow-[0px_3px_3px] text-shadow-fontshadow bg-clip-text uppercase
 }
 
 /* Animations des planètes */
@@ -66,6 +69,15 @@
     transform: rotate(0deg);
   }
   100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes footer-planet-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -79,18 +91,6 @@
   }
   100% {
     transform: translateY(0px);
-  }
-}
-
-@keyframes star-animation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 
@@ -109,5 +109,29 @@
   }
   100% {
     transform: translateX(-400%) translateY(-40%) rotate(360deg);
+  }
+}
+
+@keyframes star-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes button-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
   }
 }
