@@ -17,7 +17,7 @@
 }
 
 .font-decoration {
-  @apply inset-0 text-transparent font-black uppercase font-[Inter] tracking-normal leading-[normal] text-shadow-[0px_3px_3px] text-shadow-fontshadow bg-clip-text bg-[#FFFFFF]
+  @apply inset-0 text-transparent font-black font-[Inter] tracking-normal leading-[normal] text-shadow-[0px_3px_3px] text-shadow-fontshadow bg-clip-text bg-[#FFFFFF]
 }
 
 .button-decoration {
