@@ -16,12 +16,12 @@
 
             <!-- Header -->
 
-            <header class="px-8 sm:px-6 lg:px-8 mt-6 flex justify-between items-center mb-60">
-                <div class="w-[20%]">
+            <header class="px-8 sm:px-6 lg:px-8 mt-6 flex justify-between items-center mb-60 lg:mb-40">
+                <div class="sm:w-[20%] lg:w-[7%]">
                     <img class="w-full" src="public/img/logo.png" alt="logo chat">
                 </div>
 
-                <div class="w-[15%]" id="dark_mode">
+                <div class="w-[15%] lg:w-[4%]" id="dark_mode">
                     <img class="w-full hidden dark:block" src="public/img/lightmode.png" alt="logo_placeholder">
                     <img class="w-full dark:hidden" src="public/img/nightmode.png" alt="logo_placeholder">
                 </div>
@@ -29,44 +29,49 @@
 
             <!-- Section titre -->
 
-            <section class="relative max-w-5xl mr-auto ml-auto mb-60 mt-20 px-8 sm:px-6 lg:px-8">
+            <section class="relative max-w-5xl lg:max-w-[90%] lg:flex lg:flex-col lg:items-center mr-auto ml-auto mb-60 mt-20 px-8 sm:px-6 lg:px-8">
                 <div class="relative w-fit">
-                    <img class="absolute z-2 w-[20%] -top-[10%] rotate-15 left-[45%]" src="/public/img/star.png">
-                    <img class="absolute z-2 w-[20%] top-[33%] -rotate-25 left-[6%]" src="/public/img/star.png">
-                    <img class="absolute z-2 w-[20%] -bottom-[2%] rotate-40 right-[11%]" src="/public/img/star.png">
-                    <h1 class="font-decoration text-[clamp(11rem,25vw,18rem)] relative z-1 w-fit h-auto">SPACE CATS</h1>
+                    <img class="absolute z-2 w-[20%] -top-[10%] lg:-top-[10%] rotate-15 left-[45%] lg:left-[51%] lg:w-[10%]" src="/public/img/star.png">
+                    <img class="absolute z-2 w-[20%] top-[33%] lg:top-[50%] -rotate-25 left-[6%] lg:left-[6%] lg:w-[10%]" src="/public/img/star.png">
+                    <img class="absolute z-2 w-[20%] -bottom-[2%] lg:-bottom-[2%] rotate-40 right-[11%] lg:right-[7%] lg:w-[10%]" src="/public/img/star.png">
+                    <h1 class="font-decoration text-[clamp(11rem,25vw,16rem)] relative z-1 w-fit h-auto lg:text-center">SPACE CATS</h1>
                 </div>
-                <a href="#" class="button-decoration flex items-center">Discover our felin space &nbsp <i class='bx bx-right-arrow-circle'></i></a>
+                <a href="#" class="button-decoration flex items-center mt-10">Discover our felin space &nbsp <i class='bx bx-right-arrow-circle'></i></a>
             </section>
 
 
             <!-- Section UFO -->
 
-            <section class="section-space mr-auto ml-auto mb-60 flex flex-col justify-center items-center">
+            <section class="section-space mr-auto ml-auto mb-60 flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:max-w-[90%]">
                 
-                <img class="aspect-4/5 object-cover" src="/public/img/anim.gif">
+                <div class="lg:max-w-[50%] lg:flex lg:flex-col lg:items-center hidden">
+                    <h2 class="font-decoration text-[clamp(2.5rem,3vw,3rem)] w-full text-center mb-11 uppercase">The Cats are out !</h2>
+                    <p class="font-decoration text-[clamp(1rem,5vw,1.5rem)] mt-6 max-w-[60%] text-center">Watchout ! In the night sky, cats are dancing around. It seems that they went for a space adventure. But is it really a good idea ?</p>
+                    <a href="#" class="button-decoration flex items-center mt-10">Learn more about Space Cats &nbsp <i class='bx bx-right-arrow-circle'></i></a>
+                </div>
+                <img class="aspect-4/5 object-cover lg:max-w-[40%]" src="/public/img/anim.gif">
 
             </section>
 
             <!-- Section Cats-->
             
-            <section class="mb-80 px-8 sm:px-6 lg:px-8 flex flex-col items-center">
-                <h2 class="font-decoration text-[clamp(3rem,3vw,3.4rem)] w-full text-center mb-11 uppercase">Discover our cats</h2>
+            <section class="mb-80 px-8 sm:px-6 lg:px-8 ml-auto mr-auto flex flex-col items-center lg:max-w-[80%]">
+                <h2 class="font-decoration text-[clamp(2.5rem,3vw,3rem)] w-full text-center mb-11 uppercase">Discover our cats</h2>
                 <div class="grid grid-cols-3 grid-rows-3 gap-7 mt-30">
                     <div class="col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col items-center">
-                        <img class="aspect-2/3 object-cover" src="/public/img/chat1.jpg">
-                        <span class="pt-4 font-decoration text-[1.2rem] text-center">Karma</span>
+                        <img class="aspect-2/3 lg:aspect-square object-cover animate-float lg:w-[70%]" src="/public/img/chat1.jpg">
+                        <span class="pt-4 font-decoration text-[clamp(1.2rem,5vw,2rem)] text-center">Karma</span>
                     </div>
                     <div class="col-start-2 col-end-3 row-start-2 row-end-4 flex flex-col items-center">
-                        <img class="aspect-2/3 object-cover" src="/public/img/chat2.png">
-                        <span class="pt-4 font-decoration text-[1.2rem] text-center">Félicette</span>
+                        <img class="aspect-2/3 lg:aspect-square object-cover animate-float lg:w-[70%]" src="/public/img/chat2.png">
+                        <span class="pt-4 font-decoration text-[clamp(1.2rem,5vw,2rem)] text-center">Félicette</span>
                     </div>
                     <div class="col-start-3 col-end-4 row-start-1 row-end-3 flex flex-col items-center">
-                        <img class="aspect-2/3 object-cover" src="/public/img/uwu.jpg">
-                        <span class="pt-4 font-decoration text-[1.2rem] text-center">Angelo</span>
+                        <img class="aspect-2/3 lg:aspect-square object-cover animate-float lg:w-[70%]" src="/public/img/uwu.jpg">
+                        <span class="pt-4 font-decoration text-[clamp(1.2rem,5vw,2rem)] text-center">Angelo</span>
                     </div>
                 </div>
-                <a href="#" class="button-decoration flex items-center mt-14">Discover more cats &nbsp <i class='bx bx-right-arrow-circle'></i></a>
+                <a href="#" class="button-decoration flex items-center mt-14">See more cats &nbsp <i class='bx bx-right-arrow-circle'></i></a>
 
             </section>
 
@@ -74,36 +79,48 @@
             <!-- Section Planètes -->
 
             <section class="mb-80 overflow-hidden relative z-10">
-                <div class="animate-planet-translate flex w-max gap-9">
-                    <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
-                    <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
-                    <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
-                    <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
+                <div class="animate-planet-translate flex w-max gap-9 ">
+                    <img class="w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
+                    <img class="w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
+                    <img class="w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
+                    <img class="w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
 
-                    <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
-                    <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
-                    <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
-                    <img class="w-[30vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
+                    <img class="w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
+                    <img class="w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
+                    <img class="w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
+                    <img class="w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
+
+                    <img class="hidden lg-screen:block w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
+                    <img class="hidden lg-screen:block w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
+                    <img class="hidden lg-screen:block w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
+                    <img class="hidden lg-screen:block w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
+
+                    <img class="hidden lg-screen:block w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet1.png">
+                    <img class="hidden lg-screen:block w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/planet2.png">
+                    <img class="hidden lg-screen:block w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/sun.png">
+                    <img class="hidden lg-screen:block w-[30vw] lg:w-[15vw] h-auto aspect-square overflow-hidden object-cover" src="/public/img/azazal.jpg">
                 </div>
             </section>
 
+            <!-- Section À Propos-->
+
             <section class="mb-80 px-8 sm:px-6 lg:px-8 flex flex-col items-center">
-                <h2 class="font-decoration text-[clamp(3rem,3vw,3.4rem)] w-full text-center mb-11 uppercase">Cats ? In Space ?</h2>
-                <div class="px-8 sm:px-6 lg:px-8 text-center">
-                    <p class="font-decoration text-[1.2rem] mt-6">Kittens should absolutely not be sent into space. And this is for very serious scientific reasons.</p>
-                    <p class="font-decoration text-[1.2rem] mt-6">First, a cat in a rocket is still a cat. And a cat sees a red button… and presses it. Generally, red buttons are a bad idea.</p>
-                    <p class="font-decoration text-[1.2rem] mt-6">Secondly, in zero gravity, a cat doesn't land on its feet… it floats. The result: a small ball of fur in orbit, annoyed, plotting its revenge.</p>
-                    <p class="font-decoration text-[1.2rem] mt-6">Thirdly (and most seriously), cats might discover they are already the masters of the universe. Feline supremacy would then begin, and the world would fall at the cats' paws...</p>
-                    <p class="font-decoration text-[1.2rem] mt-6">Conclusion: For the safety of humanity, the galaxy, and the universe, let's leave cats alone on Earth.</p>
+                <h2 class="font-decoration text-[clamp(2.5rem,3vw,3rem)] w-full text-center mb-11 uppercase">Cats ? In Space ?</h2>
+                <div class="px-8 sm:px-6 lg:px-8 text-center lg:max-w-5xl">
+                    <p class="font-decoration text-[clamp(1rem,5vw,1.5rem)] mt-6">Kittens should absolutely not be sent into space. And this is for very serious scientific reasons.</p>
+                    <p class="font-decoration text-[clamp(1rem,5vw,1.5rem)] mt-6">First, a cat in a rocket is still a cat. And a cat sees a red button… and presses it. Generally, red buttons are a bad idea.</p>
+                    <p class="font-decoration text-[clamp(1rem,5vw,1.5rem)] mt-6">Secondly, in zero gravity, a cat doesn't land on its feet… it floats. The result: a small ball of fur in orbit, annoyed, plotting its revenge.</p>
+                    <p class="font-decoration text-[clamp(1rem,5vw,1.5rem)] mt-6">Thirdly (and most seriously), cats might discover they are already the masters of the universe. Feline supremacy would then begin, and the world would fall at the cats' paws...</p>
+                    <p class="font-decoration text-[clamp(1rem,5vw,1.5rem)] mt-6">Conclusion: For the safety of humanity, the galaxy, and the universe, let's leave cats alone on Earth.</p>
                 </div>
             </section>
 
             <!-- Footer -->
 
-            <footer class="flex justify-around items-center relative px-8 sm:px-6 lg:px-8">
-                <div class="relative w-full overflow-hidden">
-                    <img class="absolute left-1/2 -translate-x-1/2 bottom-[-15%] w-[75%] z-10 hidden dark:block planet-rotate" src="/public/img/moon.png">
-                    <img class="relative w-full mb-[-50%] animate-planet-rotate" src="/public/img/catsun.png">
+            <footer class="flex justify-center items-center relative px-8 sm:px-6 lg:px-8">
+                <div class="relative w-full max-w-208 mx-auto overflow-hidden">
+                    <img class="absolute left-1/2 -translate-x-1/2 bottom-[-15%] lg:bottom-[-55%] w-[75%] lg:w-[50%] z-10 hidden dark:block planet-rotate" src="/public/img/moon.png">
+                    <img class="relative w-full max-w-176 mx-auto mb-[-40%] animate-planet-rotate lg:max-w-8xl" src="/public/img/catsun.png">
                 </div>
             </footer>
 
@@ -111,10 +128,10 @@
             <!-- Chats en background -->
 
             <div>
-                <img class="absolute top-[25%] animate-cat1-translate z-0 w-[24%]" src="/public/img/space_KARMA.png">
-                <img class="absolute top-[50%] animate-cat2-translate z-0 w-[25%]" src="/public/img/angelo.png">
-                <img class="absolute top-[74%] animate-cat2-translate z-0 w-[24%]" src="/public/img/space_KARMA.png">
-                <img class="absolute top-[88%] animate-cat2-translate z-0 w-[25%]" src="/public/img/angelo.png">
+                <img class="absolute top-[20%] animate-cat1-translate z-0 w-[24%] lg:w-[14%]" src="/public/img/space_KARMA.png">
+                <img class="absolute top-[50%] animate-cat2-translate z-0 w-[25%] lg:w-[14%]" src="/public/img/angelo.png">
+                <img class="absolute top-[74%] animate-cat2-translate z-0 w-[24%] lg:w-[14%]" src="/public/img/space_KARMA.png">
+                <img class="absolute top-[88%] animate-cat2-translate z-0 w-[25%] lg:w-[14%]" src="/public/img/angelo.png">
             </div>
 
         </div>
